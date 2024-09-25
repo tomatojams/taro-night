@@ -47,7 +47,7 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
 
-  background-image: url("/back1.jpg"); /* 바탕화면에 이미지 설정 */
+  background-image: url("/taro-night/back1.jpg"); /* 바탕화면에 이미지 설정 */
   background-size: cover; /* 이미지가 화면 전체를 덮도록 설정 */
   background-position: center; /* 이미지를 중앙에 위치시킴 */
   background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
@@ -73,11 +73,11 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
 `,fk=Ln(cy)`
-  background-image: url("/card/front.png"); /* 이미지 경로 */
+  background-image: url("/taro-night/card/front.png"); /* 이미지 경로 */
   background-size: cover; /* 이미지를 카드에 맞게 크기 조정 */
   background-position: center; /* 이미지가 카드의 중앙에 위치하도록 설정 */
 `,dk=Ln(cy)`
-  background-image: url("/card/back.png"); /* 이미지 경로 */
+  background-image: url("/taro-night/card/back.png"); /* 이미지 경로 */
   background-size: cover; /* 이미지를 카드에 맞게 크기 조정 */
   background-position: center; /* 두 번째 카드 색상 (검정색) */
 `,hk=()=>Be.jsx(Be.Fragment,{children:Be.jsx(lk,{children:Be.jsx(uk,{initial:{y:300},animate:{y:50},transition:{duration:5},children:Be.jsxs(ck,{animate:{rotateY:1800,rotateZ:45},transition:{repeat:1/0,duration:25,ease:"linear"},children:[Be.jsx(fk,{animate:{opacity:[1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1]},transition:{repeat:1/0,duration:5,times:[0,.25,.5,.75,1]}}),Be.jsx(dk,{animate:{opacity:[0,0,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,0]},transition:{repeat:1/0,duration:5,times:[0,.25,.5,.75,1]}})]})})})});fm(document.getElementById("root")).render(Be.jsx(L.StrictMode,{children:Be.jsx(hk,{})}));
