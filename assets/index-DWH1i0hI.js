@@ -59,8 +59,8 @@ Error generating stack: `+o.message+`
   perspective: 1000px; /* 3D 효과를 위해 원근법 설정 */
 `,ck=_t(Vn.div)`
   position: absolute;
-  top: 150px;
-  left: 100px;
+  top: 15%;
+  left: 10%;
   margin-bottom: 20px;
   font-size: 2rem;
   font-weight: bold;
