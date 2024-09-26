@@ -42,7 +42,7 @@ Error generating stack: `+o.message+`
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 0.6fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
   background: linear-gradient(135deg, rgb(238, 0, 153), rgb(221, 0, 238));
   opacity: ${e=>e.isLoaded?1:0}; /* 이미지 로드 전에는 투명하게 */
   transition: opacity 0.5s ease-in; /* 로딩 후 부드럽게 나타나는 효과 */
