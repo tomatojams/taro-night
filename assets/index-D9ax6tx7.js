@@ -75,9 +75,12 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
 `,dk=_t(Vn.div)`
-  width: 20vw; // 화면 너비의 20%
-  height: calc(20vw * 1.5);
+  width: 30vw; // 화면 너비의 20%
+  max-width: 200px;
+  height: calc(30vw * 1.5);
+  max-height: 300px;
   position: relative;
+  align-self: center;
   perspective: 1000px; /* 3D 효과를 위해 원근법 설정 */
 `,cy=_t(Vn.div)`
   width: 100%;
