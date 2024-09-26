@@ -57,7 +57,8 @@ Error generating stack: `+o.message+`
   max-height: 300px;
   width: 30vw; // 화면 너비의 20%
   height: calc(30vw * 1.5); // 가로세로 비율을 3:2로 유지 (세로는 가로의 1.5배)
-  position: relative;
+  position: absolute;
+  top: 48%;
   perspective: 1000px; /* 3D 효과를 위해 원근법 설정 */
 `,ck=_t(Vn.div)`
   position: absolute;
