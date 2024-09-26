@@ -42,7 +42,7 @@ Error generating stack: `+o.message+`
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.6fr 1fr;
   background: linear-gradient(135deg, rgb(238, 0, 153), rgb(221, 0, 238));
   opacity: ${e=>e.isLoaded?1:0}; /* 이미지 로드 전에는 투명하게 */
   transition: opacity 0.5s ease-in; /* 로딩 후 부드럽게 나타나는 효과 */
@@ -51,6 +51,7 @@ Error generating stack: `+o.message+`
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
 `,uk=ht(Vn.div)`
   width: 100%;
   height: 100%;
@@ -73,6 +74,7 @@ Error generating stack: `+o.message+`
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  box-sizing: border-box;
 `,fk=ht(Vn.div)`
   width: 100%;
   height: 100%;
@@ -80,14 +82,16 @@ Error generating stack: `+o.message+`
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  position: absolute;
+  top: 0%;
   perspective: 1000px; /* 3D 효과를 위해 원근법 설정 */
+  box-sizing: border-box;
 `,dk=ht(Vn.div)`
   max-width: 200px;
   max-height: 300px;
   width: 30vw; // 화면 너비의 20%
   height: calc(30vw * 1.5); // 가로세로 비율을 3:2로 유지 (세로는 가로의 1.5배)
-  /* position: absolute;
-  top: 40%; */
+
   perspective: 1000px; /* 3D 효과를 위해 원근법 설정 */
 `,cy=ht(Vn.div)`
   width: 100%;
@@ -100,6 +104,7 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 `,hk=ht(Vn.div)``,pk=ht(cy)`
   background-image: url("/taro-night/card/front.png"); /* 이미지 경로 */
   background-size: cover; /* 이미지를 카드에 맞게 크기 조정 */
