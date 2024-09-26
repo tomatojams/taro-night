@@ -53,8 +53,10 @@ Error generating stack: `+o.message+`
   background-position: center;
   background-repeat: no-repeat;
 `,uk=_t(Vn.div)`
-  width: 20vw; // 화면 너비의 20%
-  height: calc(20vw * 1.5); // 가로세로 비율을 3:2로 유지 (세로는 가로의 1.5배)
+  max-width: 200px;
+  max-height: 300px;
+  width: 30vw; // 화면 너비의 20%
+  height: calc(30vw * 1.5); // 가로세로 비율을 3:2로 유지 (세로는 가로의 1.5배)
   position: relative;
   perspective: 1000px; /* 3D 효과를 위해 원근법 설정 */
 `,ck=_t(Vn.div)`
@@ -71,16 +73,14 @@ Error generating stack: `+o.message+`
   opacity: ${e=>e.isVisible?1:0}; /* 1초 동안 점점 보이게 */
   transition: opacity 1s ease-in-out; /* 자연스러운 등장 효과 */
   display: flex;
+  width: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 `,dk=_t(Vn.div)`
-  width: 30vw; // 화면 너비의 20%
-  max-width: 200px;
-  height: calc(30vw * 1.5);
-  max-height: 300px;
+  width: 100%;
+  height: 100%;
   position: relative;
-  align-self: center;
   perspective: 1000px; /* 3D 효과를 위해 원근법 설정 */
 `,cy=_t(Vn.div)`
   width: 100%;
@@ -101,4 +101,4 @@ Error generating stack: `+o.message+`
   background-image: url("/taro-night/card/back.png"); /* 이미지 경로 */
   background-size: cover; /* 이미지를 카드에 맞게 크기 조정 */
   background-position: center;
-`,mk=()=>{const e="Here is your Destiny...".split(""),t={hidden:{opacity:0,y:50},visible:s=>({opacity:1,y:0,transition:{delay:s*.2,duration:.5}})},[n,r]=L.useState(!1),[i,o]=L.useState(!1);return L.useEffect(()=>{const a=["/taro-night/back1.jpg","/taro-night/card/front.png","/taro-night/card/back.png"].map(l=>new Promise(u=>{const c=new Image;c.src=l,c.onload=()=>u()}));Promise.all(a).then(()=>{r(!0)})},[]),L.useEffect(()=>{if(n){const s=e.length*.2+.5;setTimeout(()=>{o(!0)},s*1e3)}},[n]),ue.jsx(ue.Fragment,{children:ue.jsx(lk,{isLoaded:n,children:n&&ue.jsxs(ue.Fragment,{children:[ue.jsx(ck,{children:e.map((s,a)=>ue.jsx(Vn.span,{custom:a,variants:t,initial:"hidden",animate:"visible",style:{marginRight:s===" "?"10px":"0"},children:s},a))}),ue.jsx(fk,{isVisible:i,children:ue.jsx(uk,{animate:{y:[280,250]},transition:{repeat:1/0,repeatType:"mirror",duration:3,ease:"easeInOut"},children:ue.jsxs(dk,{animate:{rotateY:1800,rotateZ:45},transition:{repeat:1/0,duration:25,ease:"linear"},children:[ue.jsx(hk,{animate:{opacity:[1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1]},transition:{repeat:1/0,duration:5,times:[0,.25,.5,.75,1]}}),ue.jsx(pk,{animate:{opacity:[0,0,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,0]},transition:{repeat:1/0,duration:5,times:[0,.25,.5,.75,1]}})]})})})]})})})};fm(document.getElementById("root")).render(ue.jsx(L.StrictMode,{children:ue.jsx(mk,{})}));
+`,mk=()=>{const e="Here is your Destiny...".split(""),t={hidden:{opacity:0,y:50},visible:s=>({opacity:1,y:0,transition:{delay:s*.2,duration:.5}})},[n,r]=L.useState(!1),[i,o]=L.useState(!1);return L.useEffect(()=>{const a=["/taro-night/back1.jpg","/taro-night/card/front.png","/taro-night/card/back.png"].map(l=>new Promise(u=>{const c=new Image;c.src=l,c.onload=()=>u()}));Promise.all(a).then(()=>{r(!0)})},[]),L.useEffect(()=>{if(n){const s=e.length*.2+.5;setTimeout(()=>{o(!0)},s*1e3)}},[n]),ue.jsx(ue.Fragment,{children:ue.jsx(lk,{isLoaded:n,children:n&&ue.jsxs(ue.Fragment,{children:[ue.jsx(ck,{children:e.map((s,a)=>ue.jsx(Vn.span,{custom:a,variants:t,initial:"hidden",animate:"visible",style:{marginRight:s===" "?"10px":"0"},children:s},a))}),ue.jsx(fk,{isVisible:i,children:ue.jsx(uk,{animate:{y:[230,200]},transition:{repeat:1/0,repeatType:"mirror",duration:3,ease:"easeInOut"},children:ue.jsxs(dk,{animate:{rotateY:1800,rotateZ:45},transition:{repeat:1/0,duration:25,ease:"linear"},children:[ue.jsx(hk,{animate:{opacity:[1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,1]},transition:{repeat:1/0,duration:5,times:[0,.25,.5,.75,1]}}),ue.jsx(pk,{animate:{opacity:[0,0,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,0]},transition:{repeat:1/0,duration:5,times:[0,.25,.5,.75,1]}})]})})})]})})})};fm(document.getElementById("root")).render(ue.jsx(L.StrictMode,{children:ue.jsx(mk,{})}));
