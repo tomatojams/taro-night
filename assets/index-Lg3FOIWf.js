@@ -82,8 +82,8 @@ Error generating stack: `+o.message+`
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  position: absolute;
-  top: 0%;
+
+  transform: translateY(0); /* 화면의 정확한 위치에 정렬 */
   perspective: 1000px; /* 3D 효과를 위해 원근법 설정 */
   box-sizing: border-box;
 `,dk=ht(Vn.div)`
@@ -91,7 +91,8 @@ Error generating stack: `+o.message+`
   max-height: 300px;
   width: 30vw; // 화면 너비의 20%
   height: calc(30vw * 1.5); // 가로세로 비율을 3:2로 유지 (세로는 가로의 1.5배)
-
+  position: absolute;
+  top: 10%;
   perspective: 1000px; /* 3D 효과를 위해 원근법 설정 */
 `,cy=ht(Vn.div)`
   width: 100%;
