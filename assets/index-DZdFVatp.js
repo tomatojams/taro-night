@@ -52,6 +52,7 @@ Error generating stack: `+o.message+`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 `,uk=_t(Vn.div)`
   max-width: 200px;
   max-height: 300px;
